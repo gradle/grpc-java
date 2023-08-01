@@ -2,6 +2,7 @@
 build
 gradle.properties
 .gradle
+gradle-user-home/
 local.properties
 out
 

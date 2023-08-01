@@ -1,0 +1,19 @@
+scenario,abiChange
+version,bazel
+tasks,build --nogenerate_json_trace_profile //...
+value,total execution time
+warm-up build #1,6606.84
+warm-up build #2,6479.40
+warm-up build #3,6598.16
+warm-up build #4,6774.29
+warm-up build #5,6906.94
+measured build #1,6278.65
+measured build #2,6778.81
+measured build #3,7181.49
+measured build #4,6555.77
+measured build #5,6607.73
+measured build #6,7135.18
+measured build #7,6810.28
+measured build #8,6216.24
+measured build #9,6548.74
+measured build #10,6675.85

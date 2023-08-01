@@ -1,0 +1,15 @@
+nonAbiChange {
+  tasks = ["assemble"]
+  apply-non-abi-change-to = "core/src/main/java/io/grpc/internal/DelayedStream.java"
+  bazel {
+    targets = ["build", "--nogenerate_json_trace_profile", "//..."]
+  }
+}
+
+abiChange {
+  tasks = ["assemble"]
+  apply-abi-change-to = "core/src/main/java/io/grpc/internal/DelayedStream.java"
+  bazel {
+    targets = ["build", "--nogenerate_json_trace_profile", "//..."]
+  }
+}
