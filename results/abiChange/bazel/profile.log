@@ -1,5 +1,5 @@
 
-* Started at 2023-08-01T15:28:30.839728Z
+* Started at 2023-08-02T15:30:42.394438Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/grpc-java
@@ -32,15 +32,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[19 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions, 4 running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.238s, Critical Path: 5.87s
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (11 actions, 3 running)
+[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions, 3 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.724s, Critical Path: 6.36s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6606 ms
+Execution time 7052 ms
 
 * Running warm-up build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -53,15 +54,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 26] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
-[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (7 actions, 3 running)
+[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (4 actions, 3 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
 [30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.094s, Critical Path: 5.72s
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.385s, Critical Path: 6.01s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6479 ms
+Execution time 6728 ms
 
 * Running warm-up build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -74,15 +76,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 29] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (4 actions, 3 running)
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (9 actions, 3 running)
+[20 / 33] Compiling Java headers xds/liborca-hjar.jar (4 source files); 1s darwin-sandbox ... (4 actions, 3 running)
+[28 / 33] Compiling Java headers alts/libalts-hjar.jar (15 source files); 0s darwin-sandbox
 [29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions running)
-INFO: Elapsed time: 6.211s, Critical Path: 5.86s
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker
+INFO: Elapsed time: 6.940s, Critical Path: 6.60s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6598 ms
+Execution time 7289 ms
 
 * Running warm-up build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -95,16 +98,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[21 / 33] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 1s darwin-sandbox ... (3 actions, 2 running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[0 / 14] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
+[19 / 33] Compiling Java headers xds/liborca-hjar.jar (4 source files); 1s darwin-sandbox ... (5 actions, 4 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor) ... (2 actions, 0 running)
 [29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
 [31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
-INFO: Elapsed time: 6.359s, Critical Path: 6.02s
+INFO: Elapsed time: 6.399s, Critical Path: 6.05s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6774 ms
+Execution time 6783 ms
 
 * Running warm-up build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -118,15 +121,14 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in ja
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
 [0 / 32] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
 [23 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (2 actions, 1 running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
-[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
-[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
-INFO: Elapsed time: 6.463s, Critical Path: 6.12s
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
+[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
+INFO: Elapsed time: 6.729s, Critical Path: 6.37s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6906 ms
+Execution time 7112 ms
 
 * Running measured build #1
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -139,15 +141,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
-[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions running)
-[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 5.868s, Critical Path: 5.53s
+[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (8 actions, 3 running)
+[20 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions, 3 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor) ... (2 actions, 0 running)
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.465s, Critical Path: 6.13s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6278 ms
+Execution time 6800 ms
 
 * Running measured build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -160,15 +163,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
-[23 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (2 actions, 1 running)
-[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
+[0 / 24] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
+[21 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (5 actions, 4 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor) ... (2 actions, 0 running)
 [30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.341s, Critical Path: 5.97s
+[33 / 33] checking cached actions
+INFO: Elapsed time: 6.272s, Critical Path: 5.93s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6778 ms
+Execution time 6617 ms
 
 * Running measured build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -181,16 +185,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 17] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[21 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (3 actions, 2 running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (7 actions, 3 running)
+[21 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (4 actions, 3 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
 [29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
 [31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
-INFO: Elapsed time: 6.776s, Critical Path: 6.42s
+INFO: Elapsed time: 6.866s, Critical Path: 6.54s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 7181 ms
+Execution time 7224 ms
 
 * Running measured build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -203,15 +207,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[0 / 15] [Prepa] BazelWorkspaceStatusAction stable-status.txt
 [8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
-[21 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (3 actions, 2 running)
-[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.124s, Critical Path: 5.78s
+[19 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (5 actions, 4 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.464s, Critical Path: 6.11s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6555 ms
+Execution time 6825 ms
 
 * Running measured build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -225,14 +230,14 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in ja
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
 [0 / 16] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (8 actions, 3 running)
-[21 / 33] Building rls/librls.jar (16 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (5 actions, 4 running)
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
+[23 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (3 actions, 1 running)
 [29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
 [30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.199s, Critical Path: 5.86s
+INFO: Elapsed time: 6.173s, Critical Path: 5.83s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6607 ms
+Execution time 6550 ms
 
 * Running measured build #6
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -245,15 +250,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 28] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[0 / 29] [Prepa] BazelWorkspaceStatusAction stable-status.txt
 [8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[23 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (2 actions, 1 running)
-[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.781s, Critical Path: 6.43s
+[19 / 33] Compiling Java headers xds/liborca-hjar.jar (4 source files); 1s darwin-sandbox ... (5 actions, 4 running)
+[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.680s, Critical Path: 6.34s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 7135 ms
+Execution time 7031 ms
 
 * Running measured build #7
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -266,15 +272,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 13] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
-[21 / 33] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 1s darwin-sandbox ... (3 actions, 2 running)
+[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
+[19 / 33] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (6 actions, 4 running)
 [29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
 [29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
-INFO: Elapsed time: 6.405s, Critical Path: 6.04s
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.688s, Critical Path: 6.19s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6810 ms
+Execution time 7081 ms
 
 * Running measured build #8
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -287,15 +294,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 25] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[7 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 4 running)
-[21 / 33] Building rls/librls.jar (16 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (5 actions, 4 running)
-[29 / 33] [Prepa] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (6 actions, 3 running)
+[21 / 33] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 1s darwin-sandbox ... (3 actions, 2 running)
+[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
 [30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 5.833s, Critical Path: 5.48s
+[33 / 33] checking cached actions
+INFO: Elapsed time: 6.254s, Critical Path: 5.93s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6216 ms
+Execution time 6568 ms
 
 * Running measured build #9
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -308,15 +316,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 31] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[22 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (3 actions, 2 running)
+[0 / 14] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
+[21 / 33] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 1s darwin-sandbox ... (3 actions, 2 running)
 [29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
-[30 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 6.165s, Critical Path: 5.82s
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.665s, Critical Path: 6.28s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6548 ms
+Execution time 6992 ms
 
 * Running measured build #10
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -329,15 +338,16 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 31] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[22 / 33] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (4 actions, 3 running)
-[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
-[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker
-INFO: Elapsed time: 6.239s, Critical Path: 5.90s
+[0 / 33] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[8 / 33] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions, 3 running)
+[21 / 33] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 1s darwin-sandbox ... (3 actions, 2 running)
+[29 / 33] [Prepa] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor)
+[29 / 33] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s darwin-sandbox ... (2 actions running)
+[31 / 33] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 2s multiplex-worker
+INFO: Elapsed time: 6.398s, Critical Path: 6.06s
 INFO: 26 processes: 1 internal, 10 darwin-sandbox, 15 worker.
 INFO: Build completed successfully, 26 total actions
-Execution time 6675 ms
+Execution time 6903 ms
 
 * Results written to /Users/ttresansky/Projects/grpc-java/results/abiChange/bazel
   /Users/ttresansky/Projects/grpc-java/results/abiChange/bazel/benchmark.csv
