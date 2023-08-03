@@ -32,7 +32,7 @@ dependencies {
     testImplementation testFixtures(project(':grpc-core')),
             testFixtures(project(':grpc-api')),
             project(':grpc-testing'),
-            project(':grpc-testing-proto'),
+            //project(':grpc-testing-proto'),
             libraries.conscrypt,
             libraries.netty.transport.epoll
     testRuntimeOnly libraries.netty.tcnative,

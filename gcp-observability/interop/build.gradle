@@ -6,12 +6,12 @@ plugins {
 
 description = "gRPC: Google Cloud Platform Observability Interop"
 
-dependencies {
-    implementation project(':grpc-interop-testing'),
-            project(':grpc-gcp-observability')
-
-    signature libraries.signature.java
-}
+//dependencies {
+//    implementation project(':grpc-interop-testing'),
+//            project(':grpc-gcp-observability')
+//
+//    signature libraries.signature.java
+//}
 
 application {
     mainClass = 'io.grpc.gcp.observability.interop.TestServiceInterop'

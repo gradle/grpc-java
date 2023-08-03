@@ -18,7 +18,7 @@ dependencies {
     compileOnly libraries.javax.annotation
 
     testImplementation project(':grpc-testing'),
-            project(':grpc-testing-proto'),
+            //project(':grpc-testing-proto'),
             testFixtures(project(':grpc-core'))
     testImplementation libraries.guava.testlib
 

@@ -25,7 +25,7 @@ dependencies {
     testImplementation libraries.truth,
             project(':grpc-grpclb'),
             project(':grpc-testing'),
-            project(':grpc-testing-proto'),
+            //project(':grpc-testing-proto'),
             testFixtures(project(':grpc-core'))
     signature libraries.signature.java
 }

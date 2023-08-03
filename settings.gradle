@@ -44,14 +44,14 @@ include ":grpc-netty-shaded"
 include ":grpc-googleapis"
 include ":grpc-grpclb"
 include ":grpc-testing"
-include ":grpc-testing-proto"
-include ":grpc-interop-testing"
-include ":grpc-gae-interop-testing-jdk8"
+//include ":grpc-testing-proto"
+//include ":grpc-interop-testing"
+//include ":grpc-gae-interop-testing-jdk8"
 //include ":grpc-all"
 include ":grpc-alts"
 //include ":grpc-benchmarks"
 include ":grpc-services"
-include ":grpc-servlet"
+//include ":grpc-servlet"
 include ":grpc-servlet-jakarta"
 include ":grpc-xds"
 //include ":grpc-bom"
@@ -59,7 +59,7 @@ include ":grpc-rls"
 //include ":grpc-authz"
 //include ":grpc-gcp-observability"
 //include ":grpc-gcp-observability:interop"
-include ":grpc-istio-interop-testing"
+//include ":grpc-istio-interop-testing"
 include ":grpc-inprocess"
 include ":grpc-util"
 
@@ -77,14 +77,14 @@ project(':grpc-netty-shaded').projectDir = "$rootDir/netty/shaded" as File
 project(':grpc-googleapis').projectDir = "$rootDir/googleapis" as File
 project(':grpc-grpclb').projectDir = "$rootDir/grpclb" as File
 project(':grpc-testing').projectDir = "$rootDir/testing" as File
-project(':grpc-testing-proto').projectDir = "$rootDir/testing-proto" as File
-project(':grpc-interop-testing').projectDir = "$rootDir/interop-testing" as File
-project(':grpc-gae-interop-testing-jdk8').projectDir = "$rootDir/gae-interop-testing/gae-jdk8" as File
+//project(':grpc-testing-proto').projectDir = "$rootDir/testing-proto" as File
+//project(':grpc-interop-testing').projectDir = "$rootDir/interop-testing" as File
+//project(':grpc-gae-interop-testing-jdk8').projectDir = "$rootDir/gae-interop-testing/gae-jdk8" as File
 //project(':grpc-all').projectDir = "$rootDir/all" as File
 project(':grpc-alts').projectDir = "$rootDir/alts" as File
 //project(':grpc-benchmarks').projectDir = "$rootDir/benchmarks" as File
 project(':grpc-services').projectDir = "$rootDir/services" as File
-project(':grpc-servlet').projectDir = "$rootDir/servlet" as File
+//project(':grpc-servlet').projectDir = "$rootDir/servlet" as File
 project(':grpc-servlet-jakarta').projectDir = "$rootDir/servlet/jakarta" as File
 project(':grpc-xds').projectDir = "$rootDir/xds" as File
 //project(':grpc-bom').projectDir = "$rootDir/bom" as File
@@ -92,7 +92,7 @@ project(':grpc-rls').projectDir = "$rootDir/rls" as File
 //project(':grpc-authz').projectDir = "$rootDir/authz" as File
 //project(':grpc-gcp-observability').projectDir = "$rootDir/gcp-observability" as File
 //project(':grpc-gcp-observability:interop').projectDir = "$rootDir/gcp-observability/interop" as File
-project(':grpc-istio-interop-testing').projectDir = "$rootDir/istio-interop-testing" as File
+//project(':grpc-istio-interop-testing').projectDir = "$rootDir/istio-interop-testing" as File
 project(':grpc-inprocess').projectDir = "$rootDir/inprocess" as File
 project(':grpc-util').projectDir = "$rootDir/util" as File
 

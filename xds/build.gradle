@@ -64,8 +64,8 @@ dependencies {
     // At runtime use the epoll included in grpc-netty-shaded
     compileOnly libraries.netty.transport.epoll
 
-    testImplementation project(':grpc-testing'),
-            project(':grpc-testing-proto')
+    testImplementation project(':grpc-testing')//,
+            //project(':grpc-testing-proto')
     testImplementation (libraries.netty.transport.epoll) {
         artifact {
             classifier = "linux-x86_64"

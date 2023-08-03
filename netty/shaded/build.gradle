@@ -57,7 +57,7 @@ dependencies {
         }
     }
     testShadowImplementation files(shadowJar),
-            project(':grpc-testing-proto'),
+            //project(':grpc-testing-proto'),
             project(':grpc-testing'),
             libraries.truth
     shadow project(':grpc-netty').configurations.runtimeClasspath.allDependencies.matching {

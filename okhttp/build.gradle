@@ -31,7 +31,7 @@ dependencies {
     testImplementation testFixtures(project(':grpc-core')),
             testFixtures(project(':grpc-api')),
             project(':grpc-testing'),
-            project(':grpc-testing-proto'),
+            //project(':grpc-testing-proto'),
             libraries.netty.codec.http2,
             libraries.okhttp
     signature libraries.signature.java

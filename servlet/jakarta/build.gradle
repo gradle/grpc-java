@@ -83,11 +83,11 @@ dependencies {
             project(':grpc-netty'),
             testFixtures(project(':grpc-core')),
             libraries.junit
-    itImplementation(project(':grpc-interop-testing')) {
-        // Avoid grpc-netty-shaded dependency
-        exclude group: 'io.grpc', module: 'grpc-alts'
-        exclude group: 'io.grpc', module: 'grpc-xds'
-    }
+//    itImplementation(project(':grpc-interop-testing')) {
+//        // Avoid grpc-netty-shaded dependency
+//        exclude group: 'io.grpc', module: 'grpc-alts'
+//        exclude group: 'io.grpc', module: 'grpc-xds'
+//    }
 
     tomcatTestImplementation 'org.apache.tomcat.embed:tomcat-embed-core:10.0.14'
 

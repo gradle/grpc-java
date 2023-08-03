@@ -68,8 +68,8 @@ dependencies {
             libraries.j2objc.annotations // Explicit dependency to keep in step with version used by guava
 
     testImplementation testFixtures(project(':grpc-api')),
-            project(':grpc-testing'),
-            project(':grpc-testing-proto')
+            project(':grpc-testing')//,
+            //project(':grpc-testing-proto')
     testImplementation (libraries.guava.testlib) {
         exclude group: 'junit', module: 'junit'
     }

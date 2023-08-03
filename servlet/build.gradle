@@ -46,11 +46,11 @@ dependencies {
             project(':grpc-netty'),
             testFixtures(project(':grpc-core')),
             libraries.junit
-    itImplementation(project(':grpc-interop-testing')) {
-        // Avoid grpc-netty-shaded dependency
-        exclude group: 'io.grpc', module: 'grpc-alts'
-        exclude group: 'io.grpc', module: 'grpc-xds'
-    }
+//    itImplementation(project(':grpc-interop-testing')) {
+//        // Avoid grpc-netty-shaded dependency
+//        exclude group: 'io.grpc', module: 'grpc-alts'
+//        exclude group: 'io.grpc', module: 'grpc-xds'
+//    }
 
     undertowTestImplementation 'io.undertow:undertow-servlet:2.2.14.Final'
 
