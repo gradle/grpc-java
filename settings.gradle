@@ -57,8 +57,8 @@ include ":grpc-xds"
 //include ":grpc-bom"
 include ":grpc-rls"
 //include ":grpc-authz"
-include ":grpc-gcp-observability"
-include ":grpc-gcp-observability:interop"
+//include ":grpc-gcp-observability"
+//include ":grpc-gcp-observability:interop"
 include ":grpc-istio-interop-testing"
 include ":grpc-inprocess"
 include ":grpc-util"
@@ -90,8 +90,8 @@ project(':grpc-xds').projectDir = "$rootDir/xds" as File
 //project(':grpc-bom').projectDir = "$rootDir/bom" as File
 project(':grpc-rls').projectDir = "$rootDir/rls" as File
 //project(':grpc-authz').projectDir = "$rootDir/authz" as File
-project(':grpc-gcp-observability').projectDir = "$rootDir/gcp-observability" as File
-project(':grpc-gcp-observability:interop').projectDir = "$rootDir/gcp-observability/interop" as File
+//project(':grpc-gcp-observability').projectDir = "$rootDir/gcp-observability" as File
+//project(':grpc-gcp-observability:interop').projectDir = "$rootDir/gcp-observability/interop" as File
 project(':grpc-istio-interop-testing').projectDir = "$rootDir/istio-interop-testing" as File
 project(':grpc-inprocess').projectDir = "$rootDir/inprocess" as File
 project(':grpc-util').projectDir = "$rootDir/util" as File
