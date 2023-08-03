@@ -1,5 +1,5 @@
 
-* Started at 2023-08-03T14:02:15.423286Z
+* Started at 2023-08-03T14:49:15.312766Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/grpc-java
@@ -87,45 +87,45 @@ Gradle args:
   --gradle-user-home
   /Users/ttresansky/Projects/grpc-java/gradle-user-home
   -I
-  /private/var/folders/r8/y04vh5s12lb9fw5zz3vcd1mm0000gq/T/gradleProfiler4411499332192330455.gradle
+  /private/var/folders/r8/y04vh5s12lb9fw5zz3vcd1mm0000gq/T/gradleProfiler16006625970211505196.gradle
 
 * Running warm-up build #1
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :compileJava NO-SOURCE
 > Task :grpc-context:compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
+> Task :compileJava NO-SOURCE
 > Task :grpc-context:processResources NO-SOURCE
-> Task :classes UP-TO-DATE
+> Task :processResources NO-SOURCE
 > Task :grpc-context:classes UP-TO-DATE
-> Task :jar UP-TO-DATE
+> Task :classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
+> Task :jar UP-TO-DATE
 > Task :grpc-context:jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf:processResources NO-SOURCE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
-> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
-> Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
+> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-api:compileContextJava UP-TO-DATE
+> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
-> Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
@@ -182,6 +182,8 @@ Gradle args:
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar
@@ -205,11 +207,13 @@ Gradle args:
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -230,31 +234,24 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-servlet-jakarta:compileJava
-> Task :grpc-servlet-jakarta:classes
-> Task :grpc-servlet-jakarta:jar UP-TO-DATE
-> Task :grpc-servlet-jakarta:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-servlet-jakarta:compileJava
+> Task :grpc-servlet-jakarta:classes
+> Task :grpc-servlet-jakarta:jar UP-TO-DATE
+> Task :grpc-servlet-jakarta:assemble
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -269,59 +266,58 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 24s
-98 actionable tasks: 42 executed, 56 up-to-date
-Used daemon with pid 33958
-Execution time 24163 ms
+BUILD SUCCESSFUL in 17s
+95 actionable tasks: 38 executed, 57 up-to-date
+Used daemon with pid 53073
+Execution time 17081 ms
 
 * Running warm-up build #2
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
-> Task :compileJava NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:jar UP-TO-DATE
+> Task :grpc-context:compileJava NO-SOURCE
+> Task :compileJava NO-SOURCE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-core:processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
-> Task :grpc-core:processResources UP-TO-DATE
-> Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
-> Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
-> Task :grpc-googleapis:processResources UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
+> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
-> Task :grpc-api:jar
 > Task :grpc-grpclb:extractIncludeProto UP-TO-DATE
 > Task :grpc-grpclb:generateProto UP-TO-DATE
 > Task :grpc-protobuf:extractIncludeProto UP-TO-DATE
@@ -330,6 +326,7 @@ Execution time 24163 ms
 > Task :grpc-protobuf-lite:generateProto NO-SOURCE
 > Task :grpc-protobuf-lite:compileJava UP-TO-DATE
 > Task :grpc-protobuf:compileJava UP-TO-DATE
+> Task :grpc-api:jar
 > Task :grpc-protobuf:classes UP-TO-DATE
 > Task :grpc-protobuf:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:classes UP-TO-DATE
@@ -356,17 +353,19 @@ Execution time 24163 ms
 > Task :grpc-protobuf-lite:assemble
 > Task :grpc-rls:extractIncludeProto UP-TO-DATE
 > Task :grpc-rls:generateProto UP-TO-DATE
+> Task :grpc-census:compileJava
+> Task :grpc-census:classes
+> Task :grpc-census:jar UP-TO-DATE
+> Task :grpc-census:assemble
 > Task :grpc-stub:compileJava
 > Task :grpc-stub:classes
 > Task :grpc-stub:jar UP-TO-DATE
 > Task :grpc-stub:checkUpperBoundDeps
 > Task :grpc-stub:assemble
-> Task :grpc-census:compileJava
-> Task :grpc-census:classes
-> Task :grpc-census:jar UP-TO-DATE
-> Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -390,11 +389,13 @@ Execution time 24163 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -415,31 +416,24 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
-> Task :grpc-servlet-jakarta:compileJava
-> Task :grpc-servlet-jakarta:classes
-> Task :grpc-servlet-jakarta:jar UP-TO-DATE
-> Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
+> Task :grpc-servlet-jakarta:compileJava
+> Task :grpc-servlet-jakarta:classes
+> Task :grpc-servlet-jakarta:jar UP-TO-DATE
+> Task :grpc-servlet-jakarta:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -454,58 +448,59 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 35s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 35412 ms
+BUILD SUCCESSFUL in 10s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 10123 ms
 
 * Running warm-up build #3
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
+> Task :grpc-auth:processResources NO-SOURCE
 > Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
 > Task :grpc-core:processResources UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :jar UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-stub:processResources NO-SOURCE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
-> Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
+> Task :grpc-api:jar
 > Task :grpc-grpclb:extractIncludeProto UP-TO-DATE
 > Task :grpc-grpclb:generateProto UP-TO-DATE
 > Task :grpc-protobuf:extractIncludeProto UP-TO-DATE
@@ -514,7 +509,6 @@ Execution time 35412 ms
 > Task :grpc-protobuf-lite:generateProto NO-SOURCE
 > Task :grpc-protobuf-lite:compileJava UP-TO-DATE
 > Task :grpc-protobuf:compileJava UP-TO-DATE
-> Task :grpc-api:jar
 > Task :grpc-protobuf:classes UP-TO-DATE
 > Task :grpc-protobuf:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:classes UP-TO-DATE
@@ -552,6 +546,8 @@ Execution time 35412 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -575,20 +571,17 @@ Execution time 35412 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
 > Task :grpc-servlet-jakarta:checkUpperBoundDeps
-> Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:classes
-> Task :grpc-okhttp:jar UP-TO-DATE
-> Task :grpc-okhttp:assemble
-> Task :grpc-testing:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -598,33 +591,31 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:jar UP-TO-DATE
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
+> Task :grpc-testing:checkUpperBoundDeps
+> Task :grpc-okhttp:compileJava
+> Task :grpc-okhttp:classes
+> Task :grpc-okhttp:jar UP-TO-DATE
+> Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -639,58 +630,59 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 18s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 18769 ms
+BUILD SUCCESSFUL in 9s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 9244 ms
 
 * Running warm-up build #4
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
-> Task :compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
-> Task :grpc-context:compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
 > Task :grpc-auth:processResources NO-SOURCE
+> Task :compileJava NO-SOURCE
+> Task :grpc-context:compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :classes UP-TO-DATE
 > Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :jar UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-protobuf:processResources NO-SOURCE
-> Task :grpc-context:jar UP-TO-DATE
-> Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
+> Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-alts:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-googleapis:processResources UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
+> Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
-> Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
+> Task :grpc-api:jar
 > Task :grpc-grpclb:extractIncludeProto UP-TO-DATE
 > Task :grpc-grpclb:generateProto UP-TO-DATE
 > Task :grpc-protobuf:extractIncludeProto UP-TO-DATE
@@ -699,7 +691,6 @@ Execution time 18769 ms
 > Task :grpc-protobuf-lite:generateProto NO-SOURCE
 > Task :grpc-protobuf-lite:compileJava UP-TO-DATE
 > Task :grpc-protobuf:compileJava UP-TO-DATE
-> Task :grpc-api:jar
 > Task :grpc-protobuf:classes UP-TO-DATE
 > Task :grpc-protobuf:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:classes UP-TO-DATE
@@ -737,16 +728,14 @@ Execution time 18769 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
 > Task :grpc-inprocess:compileJava
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
@@ -754,26 +743,27 @@ Execution time 18769 ms
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
+> Task :grpc-okhttp:checkUpperBoundDeps
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
 > Task :grpc-servlet-jakarta:checkUpperBoundDeps
-> Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:checkUpperBoundDeps
-> Task :grpc-okhttp:classes
-> Task :grpc-okhttp:jar UP-TO-DATE
-> Task :grpc-okhttp:assemble
-> Task :grpc-testing:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -783,8 +773,17 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:jar UP-TO-DATE
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
+> Task :grpc-testing:checkUpperBoundDeps
+> Task :grpc-okhttp:compileJava
+> Task :grpc-okhttp:classes
+> Task :grpc-okhttp:jar UP-TO-DATE
+> Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
+> Task :grpc-alts:compileJava
+> Task :grpc-alts:classes
+> Task :grpc-alts:jar UP-TO-DATE
+> Task :grpc-alts:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
@@ -793,23 +792,12 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
-> Task :grpc-alts:compileJava
-> Task :grpc-alts:classes
-> Task :grpc-alts:jar UP-TO-DATE
-> Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -824,52 +812,52 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 27s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 27958 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8754 ms
 
 * Running warm-up build #5
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
-> Task :compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
-> Task :classes UP-TO-DATE
 > Task :grpc-auth:processResources NO-SOURCE
+> Task :grpc-context:compileJava NO-SOURCE
+> Task :compileJava NO-SOURCE
 > Task :grpc-context:processResources NO-SOURCE
+> Task :processResources NO-SOURCE
 > Task :grpc-context:classes UP-TO-DATE
+> Task :classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
 > Task :jar UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :assemble UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-context:jar UP-TO-DATE
-> Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
+> Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
+> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-googleapis:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-rls:processResources UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
-> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
@@ -922,6 +910,8 @@ Execution time 27958 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -929,27 +919,29 @@ Execution time 27958 ms
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
 > Task :grpc-util:compileJava
+> Task :grpc-grpclb:compileJava
 > Task :grpc-util:classes
+> Task :grpc-grpclb:classes
 > Task :grpc-util:jar UP-TO-DATE
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-core:checkUpperBoundDeps
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
-> Task :grpc-okhttp:checkUpperBoundDeps
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
+> Task :grpc-okhttp:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -974,27 +966,20 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1009,61 +994,60 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 25s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 25143 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8450 ms
 
 * Using args for instrumented builds:
 
 * Running measured build #1
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
-> Task :compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
-> Task :classes UP-TO-DATE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-core:processResources UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :grpc-context:processResources NO-SOURCE
 > Task :grpc-context:classes UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :grpc-core:processResources UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :jar UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
-> Task :assemble UP-TO-DATE
 > Task :grpc-context:jar UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-alts:processResources UP-TO-DATE
-> Task :grpc-services:extractProto UP-TO-DATE
-> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-okhttp:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-okhttp:processResources UP-TO-DATE
+> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
-> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:contextClasses UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
-> Task :grpc-api:jar
 > Task :grpc-grpclb:extractIncludeProto UP-TO-DATE
 > Task :grpc-grpclb:generateProto UP-TO-DATE
 > Task :grpc-protobuf:extractIncludeProto UP-TO-DATE
@@ -1072,6 +1056,7 @@ Execution time 25143 ms
 > Task :grpc-protobuf-lite:generateProto NO-SOURCE
 > Task :grpc-protobuf-lite:compileJava UP-TO-DATE
 > Task :grpc-protobuf:compileJava UP-TO-DATE
+> Task :grpc-api:jar
 > Task :grpc-protobuf:classes UP-TO-DATE
 > Task :grpc-protobuf:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:classes UP-TO-DATE
@@ -1109,16 +1094,14 @@ Execution time 25143 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
 > Task :grpc-inprocess:compileJava
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
@@ -1126,26 +1109,27 @@ Execution time 25143 ms
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
+> Task :grpc-okhttp:checkUpperBoundDeps
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
 > Task :grpc-servlet-jakarta:checkUpperBoundDeps
-> Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:checkUpperBoundDeps
-> Task :grpc-okhttp:classes
-> Task :grpc-okhttp:jar UP-TO-DATE
-> Task :grpc-okhttp:assemble
-> Task :grpc-testing:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -1155,33 +1139,31 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:jar UP-TO-DATE
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
+> Task :grpc-testing:checkUpperBoundDeps
+> Task :grpc-okhttp:compileJava
+> Task :grpc-okhttp:classes
+> Task :grpc-okhttp:jar UP-TO-DATE
+> Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
 > Task :grpc-servlet-jakarta:compileJava
-> Task :grpc-servlet-jakarta:classes
-> Task :grpc-servlet-jakarta:jar UP-TO-DATE
-> Task :grpc-servlet-jakarta:assemble
 > Task :grpc-testing:compileJava
+> Task :grpc-servlet-jakarta:classes
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
+> Task :grpc-servlet-jakarta:assemble
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1196,53 +1178,53 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 22s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 22524 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8302 ms
 
 * Running measured build #2
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :compileJava NO-SOURCE
 > Task :grpc-context:compileJava NO-SOURCE
+> Task :compileJava NO-SOURCE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
-> Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
+> Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:processResources UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
+> Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
 > Task :grpc-api:compileJava
@@ -1294,12 +1276,18 @@ Execution time 22524 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
 > Task :grpc-inprocess:compileJava
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
@@ -1307,23 +1295,22 @@ Execution time 22524 ms
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
-> Task :grpc-okhttp:checkUpperBoundDeps
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
-> Task :grpc-rls:compileJava
-> Task :grpc-rls:classes
-> Task :grpc-rls:jar UP-TO-DATE
-> Task :grpc-rls:assemble
-> Task :grpc-servlet-jakarta:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
+> Task :grpc-rls:compileJava
+> Task :grpc-netty:checkUpperBoundDeps
+> Task :grpc-netty:assemble
 > Task :grpc-netty-shaded:compileJava NO-SOURCE
 > Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
+> Task :grpc-rls:classes
+> Task :grpc-rls:jar UP-TO-DATE
+> Task :grpc-rls:assemble
+> Task :grpc-servlet-jakarta:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -1331,17 +1318,20 @@ Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-services:classes
 > Task :grpc-services:jar UP-TO-DATE
-> Task :grpc-netty:checkUpperBoundDeps
-> Task :grpc-netty:assemble
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
 > Task :grpc-testing:checkUpperBoundDeps
 > Task :grpc-okhttp:compileJava
+> Task :grpc-okhttp:checkUpperBoundDeps
 > Task :grpc-okhttp:classes
 > Task :grpc-okhttp:jar UP-TO-DATE
 > Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
+> Task :grpc-alts:compileJava
+> Task :grpc-alts:classes
+> Task :grpc-alts:jar UP-TO-DATE
+> Task :grpc-alts:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
@@ -1350,23 +1340,12 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
-> Task :grpc-alts:compileJava
-> Task :grpc-alts:classes
-> Task :grpc-alts:jar UP-TO-DATE
-> Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1381,55 +1360,55 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 20s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 20325 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8070 ms
 
 * Running measured build #3
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 > Task :grpc-protobuf:processResources NO-SOURCE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-util:processResources UP-TO-DATE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
+> Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
-> Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
-> Task :grpc-xds:processResources UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
@@ -1479,16 +1458,14 @@ Execution time 20325 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
 > Task :grpc-inprocess:compileJava
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
@@ -1496,16 +1473,23 @@ Execution time 20325 ms
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
+> Task :grpc-okhttp:checkUpperBoundDeps
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -1521,37 +1505,29 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:assemble
 > Task :grpc-testing:checkUpperBoundDeps
 > Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:checkUpperBoundDeps
 > Task :grpc-okhttp:classes
 > Task :grpc-okhttp:jar UP-TO-DATE
 > Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1566,55 +1542,55 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12758 ms
+BUILD SUCCESSFUL in 7s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 7971 ms
 
 * Running measured build #4
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-context:jar UP-TO-DATE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
-> Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
+> Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
-> Task :grpc-servlet-jakarta:processResources NO-SOURCE
-> Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
+> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
+> Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-api:contextClasses UP-TO-DATE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:processResources NO-SOURCE
+> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileJava
 > Task :grpc-api:processResources NO-SOURCE
 > Task :grpc-api:classes
@@ -1664,6 +1640,8 @@ Execution time 12758 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -1683,19 +1661,15 @@ Execution time 12758 ms
 > Task :grpc-grpclb:jar UP-TO-DATE
 > Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
-> Task :grpc-netty:compileJava
-> Task :grpc-netty:classes
-> Task :grpc-netty:jar UP-TO-DATE
-> Task :grpc-alts:checkUpperBoundDeps
 > Task :grpc-rls:compileJava
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
-> Task :grpc-netty:checkUpperBoundDeps
-> Task :grpc-netty:assemble
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
 > Task :grpc-servlet-jakarta:checkUpperBoundDeps
+> Task :grpc-netty:compileJava
+> Task :grpc-netty:classes
+> Task :grpc-netty:jar UP-TO-DATE
+> Task :grpc-alts:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -1703,6 +1677,12 @@ Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-services:classes
 > Task :grpc-services:jar UP-TO-DATE
+> Task :grpc-netty:checkUpperBoundDeps
+> Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
 > Task :grpc-testing:checkUpperBoundDeps
@@ -1720,23 +1700,16 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1751,52 +1724,52 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 13s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 13065 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8182 ms
 
 * Running measured build #5
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :grpc-auth:processResources NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :jar UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
-> Task :grpc-protobuf:extractProto UP-TO-DATE
 > Task :assemble UP-TO-DATE
+> Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
+> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
+> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
 > Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
-> Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-testing:processResources UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
@@ -1849,6 +1822,8 @@ Execution time 13065 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -1872,15 +1847,22 @@ Execution time 13065 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
 > Task :grpc-servlet-jakarta:checkUpperBoundDeps
+> Task :grpc-okhttp:compileJava
+> Task :grpc-okhttp:classes
+> Task :grpc-okhttp:jar UP-TO-DATE
+> Task :grpc-okhttp:assemble
+> Task :grpc-testing:checkUpperBoundDeps
 
 > Task :grpc-services:compileJava
 Note: /Users/ttresansky/Projects/grpc-java/services/src/generated/main/grpc/io/grpc/reflection/v1alpha/ServerReflectionGrpc.java uses or overrides a deprecated API.
@@ -1890,38 +1872,26 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:jar UP-TO-DATE
 > Task :grpc-services:checkUpperBoundDeps
 > Task :grpc-services:assemble
-> Task :grpc-testing:checkUpperBoundDeps
-> Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:classes
-> Task :grpc-okhttp:jar UP-TO-DATE
-> Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -1936,50 +1906,50 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12805 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8051 ms
 
 * Running measured build #6
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
+> Task :grpc-context:processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
 > Task :grpc-context:jar UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :jar UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :assemble UP-TO-DATE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-alts:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-alts:processResources UP-TO-DATE
-> Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-rls:processResources UP-TO-DATE
-> Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
@@ -2034,6 +2004,8 @@ Execution time 12805 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -2043,25 +2015,27 @@ Execution time 12805 ms
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
 > Task :grpc-core:checkUpperBoundDeps
 > Task :grpc-core:assemble
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
-> Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-okhttp:checkUpperBoundDeps
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
+> Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -2082,6 +2056,10 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-okhttp:assemble
 > Task :grpc-util:checkUpperBoundDeps
 > Task :grpc-util:assemble
+> Task :grpc-alts:compileJava
+> Task :grpc-alts:classes
+> Task :grpc-alts:jar UP-TO-DATE
+> Task :grpc-alts:assemble
 > Task :grpc-servlet-jakarta:compileJava
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
@@ -2090,23 +2068,12 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
-> Task :grpc-alts:compileJava
-> Task :grpc-alts:classes
-> Task :grpc-alts:jar UP-TO-DATE
-> Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -2121,10 +2088,10 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 13s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 13091 ms
+BUILD SUCCESSFUL in 7s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 7968 ms
 
 * Running measured build #7
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
@@ -2132,39 +2099,39 @@ Execution time 13091 ms
 > Task :grpc-auth:processResources NO-SOURCE
 > Task :compileJava NO-SOURCE
 > Task :grpc-context:compileJava NO-SOURCE
-> Task :processResources NO-SOURCE
 > Task :grpc-context:processResources NO-SOURCE
-> Task :classes UP-TO-DATE
 > Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
-> Task :jar UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :assemble UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf:processResources NO-SOURCE
+> Task :jar UP-TO-DATE
+> Task :assemble UP-TO-DATE
 > Task :grpc-protobuf-lite:processResources NO-SOURCE
-> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
+> Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-census:processResources NO-SOURCE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:processResources NO-SOURCE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
 > Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
@@ -2219,6 +2186,8 @@ Execution time 13091 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -2242,11 +2211,13 @@ Execution time 13091 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -2271,27 +2242,20 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -2306,10 +2270,10 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12670 ms
+BUILD SUCCESSFUL in 8s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 8077 ms
 
 * Running measured build #8
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
@@ -2317,41 +2281,41 @@ Execution time 12670 ms
 > Task :grpc-auth:processResources NO-SOURCE
 > Task :compileJava NO-SOURCE
 > Task :grpc-context:compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
 > Task :processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
-> Task :jar UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
-> Task :assemble UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :jar UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
+> Task :assemble UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf:processResources NO-SOURCE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-util:processResources UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-alts:extractProto UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
-> Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
+> Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-okhttp:processResources UP-TO-DATE
+> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-rls:processResources UP-TO-DATE
-> Task :grpc-xds:processThirdpartyResources UP-TO-DATE
-> Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-testing:processResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-xds:processResources UP-TO-DATE
+> Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
@@ -2376,26 +2340,26 @@ Execution time 12670 ms
 > Task :grpc-api:checkUpperBoundDeps UP-TO-DATE
 > Task :grpc-api:assemble
 > Task :grpc-census:checkUpperBoundDeps
-> Task :grpc-auth:compileJava
-> Task :grpc-auth:classes
-> Task :grpc-auth:jar UP-TO-DATE
-> Task :grpc-auth:checkUpperBoundDeps
-> Task :grpc-auth:assemble
+> Task :grpc-stub:compileJava
+> Task :grpc-stub:classes
+> Task :grpc-stub:jar UP-TO-DATE
 > Task :grpc-context:checkUpperBoundDeps
 > Task :grpc-context:assemble
 > Task :grpc-services:extractIncludeProto UP-TO-DATE
 > Task :grpc-services:generateProto UP-TO-DATE
 > Task :grpc-xds:extractIncludeThirdpartyProto UP-TO-DATE
 > Task :grpc-xds:generateThirdpartyProto UP-TO-DATE
+> Task :grpc-auth:compileJava
+> Task :grpc-auth:classes
+> Task :grpc-auth:jar UP-TO-DATE
+> Task :grpc-auth:checkUpperBoundDeps
+> Task :grpc-auth:assemble
 > Task :grpc-protobuf:checkUpperBoundDeps
 > Task :grpc-protobuf:assemble
 > Task :grpc-protobuf-lite:checkUpperBoundDeps
 > Task :grpc-protobuf-lite:assemble
 > Task :grpc-rls:extractIncludeProto UP-TO-DATE
 > Task :grpc-rls:generateProto UP-TO-DATE
-> Task :grpc-stub:compileJava
-> Task :grpc-stub:classes
-> Task :grpc-stub:jar UP-TO-DATE
 > Task :grpc-stub:checkUpperBoundDeps
 > Task :grpc-stub:assemble
 > Task :grpc-census:compileJava
@@ -2404,16 +2368,14 @@ Execution time 12670 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
 > Task :grpc-inprocess:compileJava
 > Task :grpc-inprocess:classes
 > Task :grpc-inprocess:jar UP-TO-DATE
-> Task :grpc-grpclb:compileJava
-> Task :grpc-grpclb:classes
-> Task :grpc-grpclb:jar UP-TO-DATE
-> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-util:compileJava
 > Task :grpc-util:classes
 > Task :grpc-util:jar UP-TO-DATE
@@ -2421,16 +2383,23 @@ Execution time 12670 ms
 > Task :grpc-core:assemble
 > Task :grpc-inprocess:checkUpperBoundDeps
 > Task :grpc-inprocess:assemble
+> Task :grpc-okhttp:checkUpperBoundDeps
+> Task :grpc-grpclb:compileJava
+> Task :grpc-grpclb:classes
+> Task :grpc-grpclb:jar UP-TO-DATE
+> Task :grpc-grpclb:assemble UP-TO-DATE
 > Task :grpc-rls:checkUpperBoundDeps
 > Task :grpc-netty:compileJava
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -2446,7 +2415,6 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-services:assemble
 > Task :grpc-testing:checkUpperBoundDeps
 > Task :grpc-okhttp:compileJava
-> Task :grpc-okhttp:checkUpperBoundDeps
 > Task :grpc-okhttp:classes
 > Task :grpc-okhttp:jar UP-TO-DATE
 > Task :grpc-okhttp:assemble
@@ -2456,27 +2424,20 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -2491,52 +2452,52 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12555 ms
+BUILD SUCCESSFUL in 7s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 7880 ms
 
 * Running measured build #9
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:processResources NO-SOURCE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
-> Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
-> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
+> Task :grpc-protobuf:extractProto UP-TO-DATE
+> Task :grpc-protobuf:processResources NO-SOURCE
 > Task :grpc-stub:processResources NO-SOURCE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
-> Task :grpc-netty:processResources UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-netty:processResources UP-TO-DATE
 > Task :grpc-grpclb:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
-> Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-okhttp:processResources UP-TO-DATE
+> Task :grpc-services:processResources UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-rls:extractProto UP-TO-DATE
-> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
+> Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
 > Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-testing:processResources UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
 > Task :grpc-api:contextClasses UP-TO-DATE
@@ -2589,6 +2550,8 @@ Execution time 12555 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -2612,11 +2575,13 @@ Execution time 12555 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -2645,23 +2610,16 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-testing:classes
 > Task :grpc-testing:jar UP-TO-DATE
 > Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -2676,51 +2634,51 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12828 ms
+BUILD SUCCESSFUL in 7s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 7984 ms
 
 * Running measured build #10
 *** Skipping the build of codegen and compilation of proto files because skipCodegen=true
   * Skipping the build of Android projects because skipAndroid=true
 > Task :grpc-auth:processResources NO-SOURCE
-> Task :grpc-context:compileJava NO-SOURCE
 > Task :compileJava NO-SOURCE
-> Task :grpc-context:processResources NO-SOURCE
-> Task :grpc-context:classes UP-TO-DATE
+> Task :grpc-context:compileJava NO-SOURCE
 > Task :processResources NO-SOURCE
+> Task :grpc-context:processResources NO-SOURCE
 > Task :classes UP-TO-DATE
+> Task :grpc-context:classes UP-TO-DATE
 > Task :grpc-core:processResources UP-TO-DATE
 > Task :grpc-protobuf:extractProto UP-TO-DATE
-> Task :grpc-context:jar UP-TO-DATE
 > Task :jar UP-TO-DATE
+> Task :grpc-context:jar UP-TO-DATE
 > Task :assemble UP-TO-DATE
 > Task :grpc-protobuf:processResources NO-SOURCE
-> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
-> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-stub:processResources NO-SOURCE
+> Task :grpc-protobuf-lite:extractProto UP-TO-DATE
 > Task :grpc-util:processResources UP-TO-DATE
 > Task :grpc-grpclb:extractProto UP-TO-DATE
-> Task :grpc-alts:extractProto UP-TO-DATE
+> Task :grpc-protobuf-lite:processResources NO-SOURCE
 > Task :grpc-netty:processResources UP-TO-DATE
-> Task :grpc-netty-shaded:processResources NO-SOURCE
-> Task :grpc-grpclb:processResources UP-TO-DATE
+> Task :grpc-alts:extractProto UP-TO-DATE
 > Task :grpc-census:processResources NO-SOURCE
-> Task :grpc-services:extractProto UP-TO-DATE
+> Task :grpc-grpclb:processResources UP-TO-DATE
 > Task :grpc-alts:processResources UP-TO-DATE
+> Task :grpc-services:extractProto UP-TO-DATE
 > Task :grpc-xds:extractThirdpartyProto UP-TO-DATE
 > Task :grpc-googleapis:processResources UP-TO-DATE
 > Task :grpc-services:processResources UP-TO-DATE
 > Task :grpc-inprocess:processResources NO-SOURCE
-> Task :grpc-rls:extractProto UP-TO-DATE
+> Task :grpc-netty-shaded:processResources NO-SOURCE
 > Task :grpc-okhttp:processResources UP-TO-DATE
 > Task :grpc-xds:processThirdpartyResources UP-TO-DATE
+> Task :grpc-rls:extractProto UP-TO-DATE
 > Task :grpc-xds:extractProto UP-TO-DATE
-> Task :grpc-rls:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:migrateSourcesMain UP-TO-DATE
-> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-servlet-jakarta:processResources NO-SOURCE
+> Task :grpc-rls:processResources UP-TO-DATE
+> Task :grpc-xds:processResources UP-TO-DATE
 > Task :grpc-testing:processResources UP-TO-DATE
 > Task :grpc-api:compileContextJava UP-TO-DATE
 > Task :grpc-api:processContextResources NO-SOURCE
@@ -2774,6 +2732,8 @@ Execution time 12828 ms
 > Task :grpc-census:assemble
 > Task :grpc-xds:compileThirdpartyJava
 > Task :grpc-xds:thirdpartyClasses
+> Task :grpc-xds:extractIncludeProto UP-TO-DATE
+> Task :grpc-xds:generateProto NO-SOURCE
 > Task :grpc-core:compileJava
 > Task :grpc-core:classes
 > Task :grpc-core:jar UP-TO-DATE
@@ -2797,11 +2757,13 @@ Execution time 12828 ms
 > Task :grpc-netty:classes
 > Task :grpc-netty:jar UP-TO-DATE
 > Task :grpc-alts:checkUpperBoundDeps
-> Task :grpc-netty-shaded:compileJava NO-SOURCE
-> Task :grpc-netty-shaded:classes UP-TO-DATE
 > Task :grpc-rls:compileJava
 > Task :grpc-netty:checkUpperBoundDeps
 > Task :grpc-netty:assemble
+> Task :grpc-netty-shaded:compileJava NO-SOURCE
+> Task :grpc-netty-shaded:classes UP-TO-DATE
+> Task :grpc-netty-shaded:jar UP-TO-DATE
+> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-rls:classes
 > Task :grpc-rls:jar UP-TO-DATE
 > Task :grpc-rls:assemble
@@ -2826,27 +2788,20 @@ Note: Recompile with -Xlint:deprecation for details.
 > Task :grpc-servlet-jakarta:classes
 > Task :grpc-servlet-jakarta:jar UP-TO-DATE
 > Task :grpc-servlet-jakarta:assemble
-> Task :grpc-testing:compileJava
-> Task :grpc-testing:classes
-> Task :grpc-testing:jar UP-TO-DATE
-> Task :grpc-testing:assemble
-> Task :grpc-netty-shaded:shadowJar
-> Task :grpc-netty-shaded:jar UP-TO-DATE
-> Task :grpc-netty-shaded:assemble UP-TO-DATE
 > Task :grpc-alts:compileJava
 > Task :grpc-alts:classes
 > Task :grpc-alts:jar UP-TO-DATE
 > Task :grpc-alts:assemble
-> Task :grpc-alts:shadowJar
-> Task :grpc-xds:extractIncludeProto
-> Task :grpc-xds:generateProto NO-SOURCE
+> Task :grpc-testing:compileJava
+> Task :grpc-testing:classes
+> Task :grpc-testing:jar UP-TO-DATE
+> Task :grpc-testing:assemble
 
 > Task :grpc-xds:compileJava
 Note: Some input files use or override a deprecated API.
 Note: Recompile with -Xlint:deprecation for details.
 
 > Task :grpc-xds:classes
-> Task :grpc-xds:shadowJar
 > Task :grpc-xds:jar UP-TO-DATE
 > Task :grpc-xds:assemble UP-TO-DATE
 > Task :grpc-googleapis:checkUpperBoundDeps
@@ -2861,10 +2816,10 @@ You can use '--warning-mode all' to show the individual deprecation warnings and
 
 For more on this, please refer to https://docs.gradle.org/8.3-rc-3/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
 
-BUILD SUCCESSFUL in 12s
-98 actionable tasks: 40 executed, 58 up-to-date
-Used daemon with pid 33958
-Execution time 12576 ms
+BUILD SUCCESSFUL in 7s
+95 actionable tasks: 36 executed, 59 up-to-date
+Used daemon with pid 53073
+Execution time 7878 ms
 
 * Stopping daemons
 Running command /Users/ttresansky/Projects/grpc-java/gradle-user-home/wrapper/dists/gradle-8.3-rc-3-bin/cba2texaor4qzw864z698y5wm/gradle-8.3-rc-3/bin/gradle --stop --gradle-user-home /Users/ttresansky/Projects/grpc-java/gradle-user-home

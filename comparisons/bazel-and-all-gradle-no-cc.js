@@ -2,6 +2,6 @@
 
 var data = [
     ['Scenario', 'Bazel', 'Gradle 8.2.1', 'Gradle 8.3-rc-3'],
-    ['ABI Change', 11579, 17676, 14520],
-    ['Non-ABI Change', 2196, 7877, 5580]
+    ['ABI Change', 10731, 12903, 8036],
+    ['Non-ABI Change', 1267, 2197, 1221]
 ];

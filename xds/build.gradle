@@ -4,7 +4,7 @@ plugins {
     id "java"
     id "maven-publish"
 
-    id "com.github.johnrengelman.shadow"
+//    id "com.github.johnrengelman.shadow"
     id "com.google.protobuf"
     id "ru.vyarus.animalsniffer"
 }
@@ -36,7 +36,7 @@ sourceSets {
 
 configurations {
     pomDeps {
-        extendsFrom configurations.thirdpartyRuntimeClasspath, configurations.shadow
+        extendsFrom configurations.thirdpartyRuntimeClasspath//, configurations.shadow
     }
 }
 
@@ -50,7 +50,7 @@ dependencies {
             project(':grpc-core'),
             project(':grpc-services'),
             project(':grpc-auth'),
-            project(path: ':grpc-alts', configuration: 'shadow'),
+            project(path: ':grpc-alts'),
             libraries.gson,
             libraries.re2j,
             libraries.auto.value.annotations,
@@ -73,8 +73,8 @@ dependencies {
     }
     testImplementation libraries.guava.testlib
 
-    shadow configurations.implementation.getDependencies().minus([nettyDependency])
-    shadow project(path: ':grpc-netty-shaded', configuration: 'shadow')
+//    shadow configurations.implementation.getDependencies().minus([nettyDependency])
+//    shadow project(path: ':grpc-netty-shaded')
 
     signature libraries.signature.java
     testRuntimeOnly libraries.netty.tcnative,
@@ -146,26 +146,26 @@ tasks.named("jar").configure {
 }
 
 def prefixName = 'io.grpc.xds'
-tasks.named("shadowJar").configure {
-    archiveClassifier = null
-    dependencies {
-        include(project(':grpc-xds'))
-    }
-    // Relocated packages commonly need exclusions in jacocoTestReport and javadoc
-    relocate 'com.github.udpa', "${prefixName}.shaded.com.github.udpa"
-    relocate 'com.github.xds', "${prefixName}.shaded.com.github.xds"
-    relocate 'com.google.api.expr', "${prefixName}.shaded.com.google.api.expr"
-    relocate 'com.google.security', "${prefixName}.shaded.com.google.security"
-    // TODO: missing java_package option in .proto
-    relocate 'envoy.annotations', "${prefixName}.shaded.envoy.annotations"
-    relocate 'io.envoyproxy', "${prefixName}.shaded.io.envoyproxy"
-    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
-    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
-    // TODO: missing java_package option in .proto
-    relocate 'udpa.annotations', "${prefixName}.shaded.udpa.annotations"
-    relocate 'xds.annotations', "${prefixName}.shaded.xds.annotations"
-    exclude "**/*.proto"
-}
+//tasks.named("shadowJar").configure {
+//    archiveClassifier = null
+//    dependencies {
+//        include(project(':grpc-xds'))
+//    }
+//    // Relocated packages commonly need exclusions in jacocoTestReport and javadoc
+//    relocate 'com.github.udpa', "${prefixName}.shaded.com.github.udpa"
+//    relocate 'com.github.xds', "${prefixName}.shaded.com.github.xds"
+//    relocate 'com.google.api.expr', "${prefixName}.shaded.com.google.api.expr"
+//    relocate 'com.google.security', "${prefixName}.shaded.com.google.security"
+//    // TODO: missing java_package option in .proto
+//    relocate 'envoy.annotations', "${prefixName}.shaded.envoy.annotations"
+//    relocate 'io.envoyproxy', "${prefixName}.shaded.io.envoyproxy"
+//    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
+//    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
+//    // TODO: missing java_package option in .proto
+//    relocate 'udpa.annotations', "${prefixName}.shaded.udpa.annotations"
+//    relocate 'xds.annotations', "${prefixName}.shaded.xds.annotations"
+//    exclude "**/*.proto"
+//}
 
 def checkPackageLeakage = tasks.register("checkPackageLeakage") {
     inputs.files(shadowJar).withNormalizer(CompileClasspathNormalizer)

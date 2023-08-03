@@ -1,21 +1,21 @@
-import com.github.jengelman.gradle.plugins.shadow.transformers.Transformer
-import com.github.jengelman.gradle.plugins.shadow.transformers.CacheableTransformer
-import com.github.jengelman.gradle.plugins.shadow.transformers.TransformerContext
+//import com.github.jengelman.gradle.plugins.shadow.transformers.Transformer
+//import com.github.jengelman.gradle.plugins.shadow.transformers.CacheableTransformer
+//import com.github.jengelman.gradle.plugins.shadow.transformers.TransformerContext
 import org.gradle.api.file.FileTreeElement
-import shadow.org.apache.tools.zip.ZipOutputStream
-import shadow.org.apache.tools.zip.ZipEntry
+//import shadow.org.apache.tools.zip.ZipOutputStream
+//import shadow.org.apache.tools.zip.ZipEntry
 
 plugins {
     id "java"
     id "maven-publish"
 
-    id "com.github.johnrengelman.shadow"
+    //id "com.github.johnrengelman.shadow"
     id "ru.vyarus.animalsniffer"
 }
 
 description = "gRPC: Netty Shaded"
 
-sourceSets { testShadow {} }
+//sourceSets { testShadow {} }
 
 dependencies {
     implementation project(':grpc-netty')
@@ -56,13 +56,13 @@ dependencies {
             classifier = "linux-aarch_64"
         }
     }
-    testShadowImplementation files(shadowJar),
-            //project(':grpc-testing-proto'),
-            project(':grpc-testing'),
-            libraries.truth
-    shadow project(':grpc-netty').configurations.runtimeClasspath.allDependencies.matching {
-        it.group != 'io.netty'
-    }
+//    testShadowImplementation files(shadowJar),
+//            //project(':grpc-testing-proto'),
+//            project(':grpc-testing'),
+//            libraries.truth
+//    shadow project(':grpc-netty').configurations.runtimeClasspath.allDependencies.matching {
+//        it.group != 'io.netty'
+//    }
     signature libraries.signature.java
     signature libraries.signature.android
 }
@@ -75,28 +75,28 @@ tasks.named("jar").configure {
     }
 }
 
-tasks.named("shadowJar").configure {
-    archiveClassifier = null
-    dependencies {
-        include(project(':grpc-netty'))
-        include(dependency('io.netty:'))
-    }
-    exclude 'META-INF/maven/**'
-    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
-    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
-    // We have to be careful with these replacements as they must not match any
-    // string in NativeLibraryLoader, else they cause corruption. Note that
-    // this includes concatenation of string literals and constants.
-    relocate 'META-INF/native/libnetty', 'META-INF/native/libio_grpc_netty_shaded_netty'
-    relocate 'META-INF/native/netty', 'META-INF/native/io_grpc_netty_shaded_netty'
-    transform(NettyResourceTransformer.class)
-    mergeServiceFiles()
-}
+//tasks.named("shadowJar").configure {
+//    archiveClassifier = null
+//    dependencies {
+//        include(project(':grpc-netty'))
+//        include(dependency('io.netty:'))
+//    }
+//    exclude 'META-INF/maven/**'
+//    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
+//    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
+//    // We have to be careful with these replacements as they must not match any
+//    // string in NativeLibraryLoader, else they cause corruption. Note that
+//    // this includes concatenation of string literals and constants.
+//    relocate 'META-INF/native/libnetty', 'META-INF/native/libio_grpc_netty_shaded_netty'
+//    relocate 'META-INF/native/netty', 'META-INF/native/io_grpc_netty_shaded_netty'
+//    transform(NettyResourceTransformer.class)
+//    mergeServiceFiles()
+//}
 
 publishing {
     publications {
         maven(MavenPublication) {
-            project.shadow.component(it)
+//            project.shadow.component(it)
 
             // Avoid confusing error message "class file for
             // io.grpc.internal.AbstractServerImplBuilder not found"
@@ -114,55 +114,55 @@ publishing {
     }
 }
 
-tasks.register("testShadow", Test) {
-    testClassesDirs = sourceSets.testShadow.output.classesDirs
-    classpath = sourceSets.testShadow.runtimeClasspath
-}
-tasks.named("compileTestShadowJava").configure {
-    options.compilerArgs = compileTestJava.options.compilerArgs
-    options.encoding = compileTestJava.options.encoding
-}
+//tasks.register("testShadow", Test) {
+//    testClassesDirs = sourceSets.testShadow.output.classesDirs
+//    classpath = sourceSets.testShadow.runtimeClasspath
+//}
+//tasks.named("compileTestShadowJava").configure {
+//    options.compilerArgs = compileTestJava.options.compilerArgs
+//    options.encoding = compileTestJava.options.encoding
+//}
 
-tasks.named("test").configure {
-    dependsOn tasks.named("testShadow")
-}
+//tasks.named("test").configure {
+//    dependsOn tasks.named("testShadow")
+//}
 
 /**
  * A Transformer which updates the Netty JAR META-INF/ resources to accurately
  * reference shaded class names.
  */
-@CacheableTransformer
-class NettyResourceTransformer implements Transformer {
-
-    // A map of resource file paths to be modified
-    private Map<String, String> resources = [:]
-
-    @Override
-    boolean canTransformResource(FileTreeElement fileTreeElement) {
-        fileTreeElement.name.startsWith("META-INF/native-image/io.netty")
-    }
-
-    @Override
-    void transform(TransformerContext context) {
-        String updatedPath = context.path.replace("io.netty", "io.grpc.netty.shaded.io.netty")
-        String updatedContent = context.is.getText().replace("io.netty", "io.grpc.netty.shaded.io.netty")
-        resources.put(updatedPath, updatedContent)
-    }
-
-    @Override
-    boolean hasTransformedResource() {
-        resources.size() > 0
-    }
-
-    @Override
-    void modifyOutputStream(ZipOutputStream outputStream, boolean preserveFileTimestamps) {
-        for (resourceEntry in resources) {
-            ZipEntry entry = new ZipEntry(resourceEntry.key)
-            entry.time = TransformerContext.getEntryTimestamp(preserveFileTimestamps, entry.time)
-
-            outputStream.putNextEntry(entry)
-            outputStream.write(resourceEntry.value.getBytes())
-            outputStream.closeEntry()
-        }
-    }
-}
+//@CacheableTransformer
+//class NettyResourceTransformer implements Transformer {
+//
+//    // A map of resource file paths to be modified
+//    private Map<String, String> resources = [:]
+//
+//    @Override
+//    boolean canTransformResource(FileTreeElement fileTreeElement) {
+//        fileTreeElement.name.startsWith("META-INF/native-image/io.netty")
+//    }
+//
+//    @Override
+//    void transform(TransformerContext context) {
+//        String updatedPath = context.path.replace("io.netty", "io.grpc.netty.shaded.io.netty")
+//        String updatedContent = context.is.getText().replace("io.netty", "io.grpc.netty.shaded.io.netty")
+//        resources.put(updatedPath, updatedContent)
+//    }
+//
+//    @Override
+//    boolean hasTransformedResource() {
+//        resources.size() > 0
+//    }
+//
+//    @Override
+//    void modifyOutputStream(ZipOutputStream outputStream, boolean preserveFileTimestamps) {
+//        for (resourceEntry in resources) {
+//            ZipEntry entry = new ZipEntry(resourceEntry.key)
+//            entry.time = TransformerContext.getEntryTimestamp(preserveFileTimestamps, entry.time)
+//
+//            outputStream.putNextEntry(entry)
+//            outputStream.write(resourceEntry.value.getBytes())
+//            outputStream.closeEntry()
+//        }
+//    }
+//}

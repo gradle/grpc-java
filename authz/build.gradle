@@ -2,7 +2,7 @@ plugins {
     id "java-library"
     id "maven-publish"
 
-    id "com.github.johnrengelman.shadow"
+    //id "com.github.johnrengelman.shadow"
     id "com.google.protobuf"
     id "ru.vyarus.animalsniffer"
 }
@@ -23,8 +23,8 @@ dependencies {
     testImplementation libraries.guava.testlib
 
     def xdsDependency = implementation project(':grpc-xds')
-    shadow configurations.implementation.getDependencies().minus([xdsDependency])
-    shadow project(path: ':grpc-xds', configuration: 'shadow')
+//    shadow configurations.implementation.getDependencies().minus([xdsDependency])
+//    shadow project(path: ':grpc-xds')
 
     signature libraries.signature.java
 }
@@ -33,18 +33,18 @@ tasks.named("jar").configure {
     archiveClassifier = 'original'
 }
 
-tasks.named("shadowJar").configure {
-    archiveClassifier = null
-    dependencies {
-        exclude(dependency {true})
-    }
-    relocate 'io.grpc.xds', 'io.grpc.xds.shaded.io.grpc.xds'
-    relocate 'udpa.annotations', 'io.grpc.xds.shaded.udpa.annotations'
-    relocate 'com.github.udpa', 'io.grpc.xds.shaded.com.github.udpa'
-    relocate 'envoy.annotations', 'io.grpc.xds.shaded.envoy.annotations'
-    relocate 'io.envoyproxy', 'io.grpc.xds.shaded.io.envoyproxy'
-    relocate 'com.google.api.expr', 'io.grpc.xds.shaded.com.google.api.expr'
-}
+//tasks.named("shadowJar").configure {
+//    archiveClassifier = null
+//    dependencies {
+//        exclude(dependency {true})
+//    }
+//    relocate 'io.grpc.xds', 'io.grpc.xds.shaded.io.grpc.xds'
+//    relocate 'udpa.annotations', 'io.grpc.xds.shaded.udpa.annotations'
+//    relocate 'com.github.udpa', 'io.grpc.xds.shaded.com.github.udpa'
+//    relocate 'envoy.annotations', 'io.grpc.xds.shaded.envoy.annotations'
+//    relocate 'io.envoyproxy', 'io.grpc.xds.shaded.io.envoyproxy'
+//    relocate 'com.google.api.expr', 'io.grpc.xds.shaded.com.google.api.expr'
+//}
 
 tasks.named("compileJava").configure {
     it.options.compilerArgs += [

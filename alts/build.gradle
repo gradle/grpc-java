@@ -2,7 +2,7 @@ plugins {
     id "java-library"
     id "maven-publish"
 
-    id "com.github.johnrengelman.shadow"
+    //id "com.github.johnrengelman.shadow"
     id "com.google.protobuf"
     id "ru.vyarus.animalsniffer"
 }
@@ -22,8 +22,8 @@ dependencies {
     def nettyDependency = implementation project(':grpc-netty')
     compileOnly libraries.javax.annotation
 
-    shadow configurations.implementation.getDependencies().minus(nettyDependency)
-    shadow project(path: ':grpc-netty-shaded', configuration: 'shadow')
+//    shadow configurations.implementation.getDependencies().minus(nettyDependency)
+//    shadow project(path: ':grpc-netty-shaded', configuration: 'shadow')
 
     testImplementation project(':grpc-testing'),
             testFixtures(project(':grpc-core')),
@@ -65,16 +65,16 @@ tasks.named("jar").configure {
     }
 }
 
-// We want to use grpc-netty-shaded instead of grpc-netty. But we also want our
-// source to work with Bazel, so we rewrite the code as part of the build.
-tasks.named("shadowJar").configure {
-    archiveClassifier = null
-    dependencies {
-        exclude(dependency {true})
-    }
-    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
-    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
-}
+//// We want to use grpc-netty-shaded instead of grpc-netty. But we also want our
+//// source to work with Bazel, so we rewrite the code as part of the build.
+//tasks.named("shadowJar").configure {
+//    archiveClassifier = null
+//    dependencies {
+//        exclude(dependency {true})
+//    }
+//    relocate 'io.grpc.netty', 'io.grpc.netty.shaded.io.grpc.netty'
+//    relocate 'io.netty', 'io.grpc.netty.shaded.io.netty'
+//}
 
 publishing {
     publications {

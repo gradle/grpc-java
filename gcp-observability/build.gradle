@@ -53,9 +53,9 @@ dependencies {
     }
 
     runtimeOnly libraries.opencensus.impl,
-            project(path: ':grpc-netty-shaded', configuration: 'shadow'),
-            project(path: ':grpc-xds', configuration: 'shadow'),
-            project(path: ':grpc-alts', configuration: 'shadow'),
+            project(path: ':grpc-netty-shaded'),
+            project(path: ':grpc-xds'),
+            project(path: ':grpc-alts'),
             project(':grpc-auth'), // Align grpc versions
             project(':grpc-core'), // Align grpc versions
             project(':grpc-grpclb'), // Align grpc versions

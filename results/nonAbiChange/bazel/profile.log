@@ -1,5 +1,5 @@
 
-* Started at 2023-08-03T14:08:04.941672Z
+* Started at 2023-08-03T14:40:51.740058Z
 
 * Settings
 Project dir: /Users/ttresansky/Projects/grpc-java
@@ -32,17 +32,23 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[47 / 79] Compiling Java headers core/libinternal-hjar.jar (120 source files); 0s darwin-sandbox ... (2 actions running)
-[52 / 79] Building core/libinternal-class.jar (120 source files); 1s multiplex-worker ... (5 actions running)
-[66 / 79] Compiling Java headers xds/liborca-hjar.jar (4 source files); 0s darwin-sandbox ... (4 actions running)
-[72 / 79] Compiling Java headers alts/libalts_internal-hjar.jar (25 source files); 0s darwin-sandbox
+[0 / 23] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[10 / 79] Compiling Java headers stub/libstub-hjar.jar (17 source files); 1s darwin-sandbox ... (6 actions, 5 running)
+[19 / 79] Building core/libinternal-class.jar (120 source files); 2s multiplex-worker ... (7 actions running)
+[28 / 79] Building core/libinternal-class.jar (120 source files); 3s multiplex-worker ... (12 actions running)
+[38 / 79] Building core/libinternal-class.jar (120 source files); 4s multiplex-worker ... (12 actions running)
+[48 / 79] Building okhttp/libokhttp-class.jar (54 source files); 1s multiplex-worker ... (12 actions running)
+[60 / 79] Building okhttp/libokhttp-class.jar (54 source files); 2s multiplex-worker ... (8 actions running)
+[67 / 79] Compiling Java headers grpclb/libgrpclb-hjar.jar (14 source files); 2s darwin-sandbox ... (4 actions running)
+[69 / 79] Compiling Java headers xds/libenvoy_service_load_stats_v3_java_grpc-hjar.jar (1 source jar); 2s darwin-sandbox ... (4 actions running)
+[70 / 79] Compiling Java headers xds/libenvoy_service_load_stats_v3_java_grpc-hjar.jar (1 source jar); 3s darwin-sandbox ... (3 actions running)
+[72 / 79] Compiling Java headers alts/libalts_internal-hjar.jar (25 source files); 2s darwin-sandbox
 [75 / 79] Compiling Java headers xds/libxds-hjar.jar (112 source files) and running annotation processors (AutoValueProcessor); 0s darwin-sandbox ... (2 actions running)
 [76 / 79] Building xds/libxds-class.jar (112 source files) and running annotation processors (AutoValueProcessor); 1s multiplex-worker ... (2 actions, 1 running)
-INFO: Elapsed time: 9.071s, Critical Path: 8.25s
-INFO: 28 processes: 1 internal, 11 darwin-sandbox, 16 worker.
-INFO: Build completed successfully, 28 total actions
-Execution time 9967 ms
+INFO: Elapsed time: 14.630s, Critical Path: 14.00s
+INFO: 71 processes: 1 internal, 29 darwin-sandbox, 41 worker.
+INFO: Build completed successfully, 71 total actions
+Execution time 15397 ms
 
 * Running warm-up build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -55,11 +61,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 21] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.523s, Critical Path: 0.67s
+[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 1.948s, Critical Path: 1.11s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1868 ms
+Execution time 2335 ms
 
 * Running warm-up build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -72,11 +78,12 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 79] [Prepa] Building api/libapi.jar (109 source files) ... (2 actions, 0 running)
-INFO: Elapsed time: 2.474s, Critical Path: 1.44s
+[0 / 9] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+[1 / 79] Compiling Java headers api/libapi-hjar.jar (109 source files); 1s darwin-sandbox ... (2 actions running)
+INFO: Elapsed time: 6.602s, Critical Path: 4.93s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2915 ms
+Execution time 6971 ms
 
 * Running warm-up build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -89,11 +96,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 2] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.057s, Critical Path: 1.32s
+[0 / 79] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.880s, Critical Path: 0.50s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2440 ms
+Execution time 1261 ms
 
 * Running warm-up build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -106,12 +113,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 25] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[1 / 79] Compiling Java headers api/libapi-hjar.jar (109 source files); 1s darwin-sandbox ... (2 actions running)
-INFO: Elapsed time: 5.196s, Critical Path: 4.54s
+[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.984s, Critical Path: 0.52s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 5571 ms
+Execution time 1312 ms
 
 * Running measured build #1
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -124,11 +130,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 77] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.492s, Critical Path: 0.70s
+[0 / 24] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.927s, Critical Path: 0.49s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1894 ms
+Execution time 1263 ms
 
 * Running measured build #2
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -142,10 +148,10 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in ja
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
 [0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.395s, Critical Path: 0.70s
+INFO: Elapsed time: 0.971s, Critical Path: 0.55s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1762 ms
+Execution time 1334 ms
 
 * Running measured build #3
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -158,11 +164,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.320s, Critical Path: 1.50s
+[0 / 79] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.938s, Critical Path: 0.50s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2694 ms
+Execution time 1257 ms
 
 * Running measured build #4
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -176,10 +182,10 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in ja
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
 [0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.162s, Critical Path: 1.54s
+INFO: Elapsed time: 0.870s, Critical Path: 0.48s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2522 ms
+Execution time 1212 ms
 
 * Running measured build #5
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -192,11 +198,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 1] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 2.191s, Critical Path: 1.47s
+[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.947s, Critical Path: 0.49s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2559 ms
+Execution time 1318 ms
 
 * Running measured build #6
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -209,12 +215,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 21] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-[2 / 79] Compiling Java headers api/libapi-hjar.jar (109 source files); 1s darwin-sandbox
-INFO: Elapsed time: 2.874s, Critical Path: 1.75s
+[0 / 77] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.953s, Critical Path: 0.55s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 3272 ms
+Execution time 1313 ms
 
 * Running measured build #7
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -227,11 +232,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 79] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.336s, Critical Path: 0.64s
+[0 / 41] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.900s, Critical Path: 0.50s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1789 ms
+Execution time 1251 ms
 
 * Running measured build #8
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -244,11 +249,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.442s, Critical Path: 0.69s
+[0 / 72] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.961s, Critical Path: 0.48s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 2039 ms
+Execution time 1316 ms
 
 * Running measured build #9
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -261,11 +266,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 6] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.379s, Critical Path: 0.72s
+[0 / 27] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.846s, Critical Path: 0.48s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1763 ms
+Execution time 1203 ms
 
 * Running measured build #10
 Running command bazel build --nogenerate_json_trace_profile //...
@@ -278,11 +283,11 @@ WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:167:18: in _j
 WARNING: /Users/ttresansky/Projects/grpc-java/services/BUILD.bazel:107:13: in java_library rule //services:reflection: target '//services:reflection' depends on deprecated target '@io_grpc_grpc_proto//:reflection_java_proto_deprecated': Use :reflection_java_proto instead
 INFO: Analyzed 66 targets (0 packages loaded, 0 targets configured).
 INFO: Found 66 targets...
-[0 / 51] [Prepa] BazelWorkspaceStatusAction stable-status.txt
-INFO: Elapsed time: 1.290s, Critical Path: 0.66s
+[0 / 59] [Prepa] BazelWorkspaceStatusAction stable-status.txt
+INFO: Elapsed time: 0.842s, Critical Path: 0.48s
 INFO: 3 processes: 1 internal, 1 darwin-sandbox, 1 worker.
 INFO: Build completed successfully, 3 total actions
-Execution time 1667 ms
+Execution time 1200 ms
 
 * Results written to /Users/ttresansky/Projects/grpc-java/results/nonAbiChange/bazel
   /Users/ttresansky/Projects/grpc-java/results/nonAbiChange/bazel/benchmark.csv

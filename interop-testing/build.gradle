@@ -14,7 +14,7 @@ configurations {
 }
 
 dependencies {
-    implementation project(path: ':grpc-alts', configuration: 'shadow'),
+    implementation project(path: ':grpc-alts'),
             project(':grpc-auth'),
             project(':grpc-census'),
             project(':grpc-core'),
@@ -26,7 +26,7 @@ dependencies {
             project(':grpc-services'),
             project(':grpc-stub'),
             project(':grpc-testing'),
-            project(path: ':grpc-xds', configuration: 'shadow'),
+            project(path: ':grpc-xds'),
             libraries.hdrhistogram,
             libraries.junit,
             libraries.truth,

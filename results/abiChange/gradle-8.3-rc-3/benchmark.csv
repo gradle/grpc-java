@@ -2,18 +2,18 @@ scenario,abiChange
 version,Gradle 8.3-rc-3
 tasks,assemble
 value,total execution time
-warm-up build #1,24163.95
-warm-up build #2,35412.97
-warm-up build #3,18769.85
-warm-up build #4,27958.10
-warm-up build #5,25143.77
-measured build #1,22524.76
-measured build #2,20325.38
-measured build #3,12758.25
-measured build #4,13065.56
-measured build #5,12805.80
-measured build #6,13091.45
-measured build #7,12670.04
-measured build #8,12555.12
-measured build #9,12828.70
-measured build #10,12576.80
+warm-up build #1,17081.19
+warm-up build #2,10123.61
+warm-up build #3,9244.90
+warm-up build #4,8754.97
+warm-up build #5,8450.52
+measured build #1,8302.53
+measured build #2,8070.65
+measured build #3,7971.24
+measured build #4,8182.18
+measured build #5,8051.13
+measured build #6,7968.21
+measured build #7,8077.81
+measured build #8,7880.57
+measured build #9,7984.52
+measured build #10,7878.43
