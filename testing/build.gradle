@@ -26,8 +26,6 @@ dependencies {
     signature libraries.signature.android
 }
 
-tasks.named("javadoc").configure { exclude 'io/grpc/internal/**' }
-
 tasks.named("jacocoTestReport").configure {
     classDirectories.from = sourceSets.main.output.collect {
         fileTree(dir: it,

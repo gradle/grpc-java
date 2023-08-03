@@ -151,15 +151,6 @@ subprojects {
         }
     }
 
-    // Disable JavaDoc doclint on Java 8. It's annoying.
-    if (JavaVersion.current().isJava8Compatible()) {
-        allprojects {
-            tasks.withType(Javadoc).configureEach {
-                options.addStringOption('Xdoclint:none', '-quiet')
-            }
-        }
-    }
-
     checkstyle {
         configDirectory = file("$rootDir/buildscripts")
         toolVersion = JavaVersion.current().isJava11Compatible() ? libs.checkstyle.get().version : libs.checkstylejava8.get().version 
@@ -199,15 +190,6 @@ subprojects {
             manifest {
                 attributes('Implementation-Title': name,
                         'Implementation-Version': project.version)
-            }
-        }
-
-        tasks.named("javadoc").configure {
-            options {
-                encoding = 'UTF-8'
-                use = true
-                links 'https://docs.oracle.com/javase/8/docs/api/'
-                source = "8"
             }
         }
 
@@ -395,10 +377,6 @@ subprojects {
         }
 
         plugins.withId("java") {
-            java {
-                withJavadocJar()
-                withSourcesJar()
-            }
 
             publishing {
                 publications {

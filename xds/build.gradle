@@ -145,29 +145,6 @@ tasks.named("jar").configure {
     }
 }
 
-tasks.named("sourcesJar").configure {
-    from sourceSets.thirdparty.allSource
-}
-
-tasks.named("javadoc").configure {
-    // Exclusions here should generally also be relocated
-    exclude 'com/github/udpa/**'
-    exclude 'com/github/xds/**'
-    exclude 'com/google/security/**'
-    exclude 'io/envoyproxy/**'
-    // Need to clean up the class structure to reduce how much is exposed
-    exclude 'io/grpc/xds/*LoadBalancer*'
-    exclude 'io/grpc/xds/Bootstrapper.java'
-    exclude 'io/grpc/xds/Envoy*'
-    exclude 'io/grpc/xds/FilterChainMatchingProtocolNegotiators.java'
-    exclude 'io/grpc/xds/TlsContextManager.java'
-    exclude 'io/grpc/xds/XdsAttributes.java'
-    exclude 'io/grpc/xds/XdsInitializationException.java'
-    exclude 'io/grpc/xds/XdsNameResolverProvider.java'
-    exclude 'io/grpc/xds/internal/**'
-    exclude 'io/grpc/xds/Internal*'
-}
-
 def prefixName = 'io.grpc.xds'
 tasks.named("shadowJar").configure {
     archiveClassifier = null

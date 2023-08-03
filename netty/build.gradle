@@ -79,11 +79,6 @@ import net.ltgt.gradle.errorprone.CheckSeverity
     options.errorprone.check("FutureReturnValueIgnored", CheckSeverity.OFF)
 }
 
-tasks.named("javadoc").configure {
-    options.links 'http://netty.io/4.1/api/'
-    exclude 'io/grpc/netty/Internal*'
-}
-
 tasks.named("test").configure {
     // Allow testing Jetty ALPN in TlsTest
     jvmArgs "-javaagent:" + configurations.alpnagent.asPath

@@ -33,10 +33,6 @@ dependencies {
 
 configureProtoCompilation()
 
-tasks.named("javadoc").configure {
-    exclude 'io/grpc/grpclb/Internal*'
-}
-
 tasks.named("jacocoTestReport").configure {
     classDirectories.from = sourceSets.main.output.collect {
         fileTree(dir: it,

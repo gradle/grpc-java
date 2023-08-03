@@ -34,7 +34,3 @@ dependencies {
     signature libraries.signature.java
     signature libraries.signature.android
 }
-
-tasks.named("javadoc").configure {
-    options.links 'https://protobuf.dev/reference/java/api-docs/'
-}

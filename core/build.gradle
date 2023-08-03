@@ -49,13 +49,6 @@ dependencies {
     signature libraries.signature.android
 }
 
-tasks.named("javadoc").configure {
-    exclude 'io/grpc/internal/**'
-    exclude 'io/grpc/inprocess/Internal*'
-    // Disabled until kinda stable.
-    exclude 'io/grpc/perfmark/**'
-}
-
 tasks.named("jar").configure {
     manifest {
         attributes('Automatic-Module-Name': 'io.grpc.internal')

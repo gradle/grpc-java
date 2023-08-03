@@ -57,11 +57,6 @@ import net.ltgt.gradle.errorprone.CheckSeverity
     options.errorprone.check("FutureReturnValueIgnored", CheckSeverity.OFF)
 }
 
-tasks.named("javadoc").configure {
-    exclude 'io/grpc/alts/internal/**'
-    exclude 'io/grpc/alts/Internal*'
-}
-
 tasks.named("jar").configure {
     // Must use a different archiveClassifier to avoid conflicting with shadowJar
     archiveClassifier = 'original'

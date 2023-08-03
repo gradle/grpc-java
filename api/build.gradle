@@ -51,15 +51,5 @@ dependencies {
     signature libraries.signature.android
 }
 
-tasks.named("javadoc").configure {
-    source sourceSets.context.allSource
-    // We want io.grpc.Internal, but not io.grpc.Internal*
-    exclude 'io/grpc/Internal?*.java'
-}
-
-tasks.named("sourcesJar").configure {
-    from sourceSets.context.allSource
-}
-
 components.java.withVariantsFromConfiguration(configurations.testFixturesApiElements) { skip() }
 components.java.withVariantsFromConfiguration(configurations.testFixturesRuntimeElements) { skip() }

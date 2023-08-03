@@ -23,10 +23,7 @@ android {
     }
     lintOptions { abortOnError true }
     publishing {
-        singleVariant('release') {
-            withSourcesJar()
-            withJavadocJar()
-        }
+        singleVariant('release')
     }
 }
 
@@ -43,33 +40,6 @@ dependencies {
     testImplementation libraries.junit
     testImplementation libraries.robolectric
     testImplementation libraries.truth
-}
-
-tasks.register("javadocs", Javadoc) {
-    source = android.sourceSets.main.java.srcDirs
-    classpath += files(android.getBootClasspath())
-    classpath += files({
-        android.libraryVariants.collect { variant ->
-            variant.javaCompileProvider.get().classpath
-        }
-    })
-    options {
-        // Disable JavaDoc doclint on Java 8.
-        if (JavaVersion.current().isJava8Compatible()) {
-            addStringOption('Xdoclint:none', '-quiet')
-        }
-    }
-}
-
-tasks.register("javadocJar", Jar) {
-    dependsOn javadocs
-    archiveClassifier = 'javadoc'
-    from javadocs.destinationDir
-}
-
-tasks.register("sourcesJar", Jar) {
-    archiveClassifier = 'sources'
-    from android.sourceSets.main.java.srcDirs
 }
 
 publishing {

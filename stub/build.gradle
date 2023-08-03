@@ -24,6 +24,3 @@ dependencies {
     signature libraries.signature.android
 }
 
-tasks.named("javadoc").configure {
-    exclude 'io/grpc/stub/Internal*'
-}

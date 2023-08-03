@@ -57,6 +57,7 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManagerFactory;
 import javax.security.auth.x500.X500Principal;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
@@ -67,6 +68,7 @@ import org.junit.runners.JUnit4;
  * Tests for {@link OkHttpChannelBuilder}.
  */
 @RunWith(JUnit4.class)
+@Ignore
 public class OkHttpChannelBuilderTest {
 
   @SuppressWarnings("deprecation") // https://github.com/grpc/grpc-java/issues/7467

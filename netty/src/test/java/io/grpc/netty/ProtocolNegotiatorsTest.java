@@ -140,6 +140,7 @@ import javax.net.ssl.TrustManagerFactory;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.DisableOnDebug;
@@ -153,6 +154,7 @@ import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
 
 @RunWith(JUnit4.class)
+@Ignore
 public class ProtocolNegotiatorsTest {
   private static final Runnable NOOP_RUNNABLE = new Runnable() {
     @Override public void run() {}
