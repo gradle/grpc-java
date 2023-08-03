@@ -49,7 +49,7 @@ include ":grpc-interop-testing"
 include ":grpc-gae-interop-testing-jdk8"
 //include ":grpc-all"
 include ":grpc-alts"
-include ":grpc-benchmarks"
+//include ":grpc-benchmarks"
 include ":grpc-services"
 include ":grpc-servlet"
 include ":grpc-servlet-jakarta"
@@ -82,7 +82,7 @@ project(':grpc-interop-testing').projectDir = "$rootDir/interop-testing" as File
 project(':grpc-gae-interop-testing-jdk8').projectDir = "$rootDir/gae-interop-testing/gae-jdk8" as File
 //project(':grpc-all').projectDir = "$rootDir/all" as File
 project(':grpc-alts').projectDir = "$rootDir/alts" as File
-project(':grpc-benchmarks').projectDir = "$rootDir/benchmarks" as File
+//project(':grpc-benchmarks').projectDir = "$rootDir/benchmarks" as File
 project(':grpc-services').projectDir = "$rootDir/services" as File
 project(':grpc-servlet').projectDir = "$rootDir/servlet" as File
 project(':grpc-servlet-jakarta').projectDir = "$rootDir/servlet/jakarta" as File
