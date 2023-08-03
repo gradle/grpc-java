@@ -54,7 +54,7 @@ include ":grpc-services"
 include ":grpc-servlet"
 include ":grpc-servlet-jakarta"
 include ":grpc-xds"
-include ":grpc-bom"
+//include ":grpc-bom"
 include ":grpc-rls"
 //include ":grpc-authz"
 include ":grpc-gcp-observability"
@@ -87,7 +87,7 @@ project(':grpc-services').projectDir = "$rootDir/services" as File
 project(':grpc-servlet').projectDir = "$rootDir/servlet" as File
 project(':grpc-servlet-jakarta').projectDir = "$rootDir/servlet/jakarta" as File
 project(':grpc-xds').projectDir = "$rootDir/xds" as File
-project(':grpc-bom').projectDir = "$rootDir/bom" as File
+//project(':grpc-bom').projectDir = "$rootDir/bom" as File
 project(':grpc-rls').projectDir = "$rootDir/rls" as File
 //project(':grpc-authz').projectDir = "$rootDir/authz" as File
 project(':grpc-gcp-observability').projectDir = "$rootDir/gcp-observability" as File
